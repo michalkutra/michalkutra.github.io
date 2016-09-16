@@ -1,0 +1,497 @@
+h2 {
+    position: relative;
+    line-height: 22px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20pt !important;
+    color: #5086c5;
+    border-bottom: 1px solid #EEF2F2;
+    padding: 10px 0px 7px 3px;
+}
+h2 span {
+    position: absolute;
+    top: 45px;
+    font-size: 19px;
+    color:#747474;
+}
+
+article h2::before {
+    position: absolute;
+    left: -77px;
+    top: 23px;
+    width: 65px;
+    height: 65px;
+}
+article .article-title::before {
+    font-family: FontAwesome;
+    content: "\f02c";
+    color: #EEF2F2;
+    font-size: 56px;
+    /*content: url(../img/pill.png);*/
+}
+article h3 {
+    position: relative;
+    border-bottom: 1px solid #EEF2F2;
+    margin: 50px 0;
+    padding-bottom: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+article .icon {
+    margin: 80px 0px 50px 70px;
+}
+article .icon.section-header {
+    margin: 5px 0px 75px 90px;
+}
+article h3::before {
+    position: absolute;
+    left: -70px;
+    top: -15px;
+    width: 65px;
+    height: 65px;
+    color: #EEF2F2;
+    font-size: 52px;
+}
+article p, article ul {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+article ul {
+    padding-left: 10px;
+    list-style: outside;
+}
+article ul li {
+    text-indent: 0px;
+    margin-left: 10px;
+}
+#content-list li {
+    text-indent: 0px;
+    margin-left: 10px;
+    color:#5086C5;
+}
+#content-list ul li:hover {
+    color:#3f6a9c;
+}
+article .grey {
+    background-color: #f3f7f7;
+    margin: 15px 0 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+article .grey p {
+    margin: 0 20px 20px 20px;
+    padding-left: 0px;
+}
+article .grey ul {
+    margin: 0 20px 20px 20px;
+    padding-left: 10px;
+}
+article .grey h4 {
+    position: relative;
+    margin: 35px 0px 35px 20px;
+    font-weight: bold;
+}
+article .grey .duration, article .grey .prepare, article .grey .information {
+    margin: 35px 0px 35px 100px;
+}
+article .grey h4:first-child::before {
+    position: absolute;
+    width: 95px;
+    height: 122px;
+    color: #5086C5;
+    font-size: 56px;
+}
+article .grey .duration::before {
+    font-family: FontAwesome;
+    content: "\f0f1";
+    /*content: url(../img/p_przebieg_w_trakcie_zabiegu.png);*/
+    left: -76px;
+    top: -25px;
+}
+article .grey .information::before {
+    font-family: FontAwesome;
+    content: "\f05a";
+    /*content: url(../img/p_niezbedne_informacje.png);*/
+}
+article .prepare::before {
+    font-family: FontAwesome;
+    content: "\f18e";
+    /*left: -75px;*/
+    /*content: url(../img/p_przygotowanie.png);*/
+}
+article .recommend::before {
+    font-family: FontAwesome;
+    content: "\f0f0";
+    left: -68px;
+    /*content: url(../img/p_zalecenia_po_zabiegu.png);*/
+}
+article .price::before {
+    font-family: FontAwesome;
+    content:"\f153";
+    left: -66px;
+}
+article .pen::before {
+    font-family: FontAwesome;
+    content:"\f040";
+    /*left: -76px;*/
+}
+article .pricelist {
+    background-color: #fff;
+    position: relative;
+    height: 150px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #EEF2F2;
+}
+article .pricelist::before {
+    font-family: FontAwesome;
+    content: "\f02e";
+    left: 20px;
+    top: -30px;
+    color: #5086C5;
+    font-size: 56px;
+    position: absolute;
+    z-index: 99999;
+}
+.pricelist .price-container {
+    height: 107px;
+    width: 85%;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,1);
+}
+.pricelist .price-row {
+    float: left;
+    width: 100%;
+}
+.pricelist .price-row:first-child {
+    border-bottom: 1px solid #EEF2F2;
+}
+.pricelist .price-cell {
+    float: left;
+    width: 19%;
+    border-right: 1px solid #EEF2F2;
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+.pricelist .price-row .price-cell:last-child {
+    border-right: none;
+}
+blockquote {
+    margin: 0 0 40px 110px;
+    background-color: #f3f7f7;
+    position: relative;
+    padding: 20px 20px 20px 90px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+.doc-img {
+    position: absolute;
+    left: -90px;
+    top: 25px;
+    border-radius: 50%;
+    border: none;
+    width: 150px;
+    height: 150px;
+}
+.doc-name {
+    font-size: 20px;
+    margin: 0 20px 10px 0;
+}
+.doc-special {
+    font-style: italic;
+}
+.doc-q {
+    padding: 10px 0;
+    margin: 0 20px 10px 0;
+}
+article blockquote .doc-a {
+    font-style: italic;
+    padding-left: 0px
+}
+article .btn-doc {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,rgba(163,225,232,.15) 0,rgba(0,171,190,.15) 100%);
+    background-image: -o-linear-gradient(top,rgba(163,225,232,.15) 0,rgba(0,171,190,.15) 100%);
+    background-image: linear-gradient(to bottom,rgba(163,225,232,.15) 0,rgba(0,171,190,.15) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#26A3E1E8', endColorstr='#2600ABBE', GradientType=0);
+    background-color: #2391d7;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    outline: 0;
+    border: 1px solid #228bce;
+    font-weight: 400;
+    font-weight: 700;
+    padding: 10px;
+}
+article .btn-doc:hover {
+    text-decoration: none;
+    background-color: #5186C5;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    h1 {
+        font-size: 18pt;
+    }
+    h2 {
+        border-bottom: 3px solid #5086c5;
+        font-size: 18pt;
+    }
+    h2 span {
+        font-size: 18px;
+        top: 42px;
+    }
+    article h3 {
+        margin: 70px 20px 30px 20px;
+    }
+    article .pricelist::before {
+        left: 5px;
+        top: -5px;
+        transform: scale(.8);
+    }
+    .pricelist .price-container {
+        width: 89%;
+        padding: 10px;
+    }
+    .pricelist .price-cell {
+        font-size: 14px;
+    }
+    article .icon {
+        margin: 70px 20px 60px 90px;
+    }
+    .pricelist .price-container {
+        right: 30px;
+    }
+    .doc-img {
+        width: 165px;
+        height: 165px;
+    }
+    blockquote {
+        padding: 25px 15px 25px 80px;
+    }
+    h1#menu-0 {
+        font-size: 26pt;
+    }
+    .head-foot, .head-foot p {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+    h2 {
+        border-bottom: 3px solid #5086c5;
+        font-size: 18pt;
+    }
+    h2 span {
+        top: 40px;
+        font-size: 17px;
+    }
+    article .pricelist::before {
+        left: -17px;
+        top: -44px;
+        transform: scale(.6);
+    }
+    .pricelist .price-container {
+        width: 85%;
+        padding: 10px 20px 10px 110px;
+    }
+    .doc-img {
+        width: 165px;
+        height: 165px;
+    }
+    blockquote {
+        padding: 25px 15px 25px 60px;
+    }
+    .baner {
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0px;
+        width: 596px;
+        z-index: 2;
+    }
+    #menu-0 {
+        margin-top:60px;
+    }
+    article h2::before {
+        position: absolute;
+        left: -70px;
+        top: 5px;
+        width: 57px;
+        height: 65px;
+        transform: scale(.7);
+    }
+    article .icon {
+        margin: 70px 20px 70px 120px;
+    }
+    article .article-title.icon {
+        margin: 70px 20px 70px 85px;
+    }
+    article .pricelist::before {
+        content: none;
+    }
+    .pricelist .price-container {
+        width: 92%;
+        padding: 10px 20px;
+        right: 20px;
+    }
+    .doc-logo {
+        top: 60px;
+    }
+    h1#menu-0 {
+        font-size: 24pt;
+    }
+    .head-foot, .head-foot p {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+
+    h2 {
+        border-bottom: 3px solid #5086c5;
+        font-size: 16pt;
+    }
+    h2 span {
+        top: 40px;
+        font-size: 15px;
+    }
+    article .pricelist::before {
+        left: -17px;
+        top: -44px;
+        transform: scale(.6);
+    }
+    .pricelist .price-container {
+        width: 85%;
+        padding: 10px 20px 10px 110px;
+    }
+    blockquote {
+        padding: 25px 15px 25px 60px;
+    }
+    article .pricelist::before {
+        content: none;
+    }
+    article .pricelist {
+        margin: 0px;
+    }
+    .pricelist .price-container {
+        width: 100%;
+        right: 0px;
+        padding: 10px 0;
+    }
+    .pricelist .price-cell {
+        float: left;
+        width: 19%;
+        border-right: 1px solid #000;
+        text-align: center;
+        padding: 10px 0;
+        color: #2386c8;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    article h3 {
+        position: relative;
+        border-bottom: 1px solid #5086c5;
+        margin: 35px 20px;
+        padding-bottom: 5px;
+        font-size: 13pt;
+        font-weight: bold;
+    }
+    blockquote {
+        padding: 20px;
+        margin: 0 0 40px;
+    }
+    .doc-img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        display: block;
+        margin: auto;
+        width: 140px;
+        height: 140px;
+    }
+    .doc-name {
+        font-size: 21px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    article .icon {
+        margin: 70px 20px 50px 105px;
+    }
+    .article-title.icon {
+        margin: 70px 20px 50px 65px;
+    }
+    .article-title::before {
+        position: absolute;
+        left: -61px;
+        top: -17px;
+        width: 65px;
+        height: 65px;
+        transform: scale(0.7);
+    }
+    h2 span {
+        display: none;
+    }
+    .doc-special {
+        text-align: center;
+    }
+    .doc-q {
+        padding: 15px 0 10px 0;
+    }
+    h1 {
+        margin: 70px 20px 20px 20px;
+    }
+    article .grey p, article .grey ul {
+        margin: 0 0 20px 0;
+        padding-left: 0px;
+    }
+    article .grey h4 {
+        margin: 35px 0px 35px 60px;
+    }
+    article blockquote .doc-q, article blockquote .doc-a, article blockquote p {
+        font-size: 12pt;
+    }
+    article .btn-doc {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .cover {
+        margin-top: -42px;
+    }
+    .doc-logo {
+        top: 80px;
+    }
+    h1#menu-0 {
+        font-size: 24pt;
+    }
+    .head-foot, .head-foot p {
+        font-size: 11pt;
+    }
+    .last-cover {
+        margin-bottom: 260px;
+    }
+    article .icon.section-header {
+        margin-left: 0;
+    }
+    article h2::before {
+        display: none;
+    }
+
+}
