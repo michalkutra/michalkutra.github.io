@@ -118,7 +118,8 @@ article .grey .information::before {
 article .prepare::before {
     font-family: FontAwesome;
     content: "\f18e";
-    /*left: -75px;*/
+    left: -75px;
+    top: -20px;
     /*content: url(../img/p_przygotowanie.png);*/
 }
 article .recommend::before {
