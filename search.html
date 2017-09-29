@@ -5275,10 +5275,37 @@
 		</div>
 	</div>
 </footer>
+<script>
+  function loadScript (src, callback) {
+    var s,
+      r,
+      t;
+    r = false;
+    s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.defer = true;
+    s.src = src;
+    s.onload = s.onreadystatechange = function () {
+      if (!r && (!this.readyState || this.readyState === 'complete')) {
+        r = true;
+        callback();
+      }
+    };
+    t = document.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(s, t);
+  }
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', function () {
+    var scripts = document.querySelectorAll('[data-defer-script-src]');
 
-<script src="//www.docplanner-platform.com/staging/js/goro-search.js?v=2903740648" defer="defer"></script>
+    for (var i = 0; i < scripts.length; i++) {
+      var script = scripts[i];
+      script.setAttribute('src', script.getAttribute('data-defer-script-src'));
+    }
+  });
+</script>
+
+<script data-defer-script-src="//www.docplanner-platform.com/staging/js/goro-search.js?v=2903740648" defer="defer"></script>
 
 
 
