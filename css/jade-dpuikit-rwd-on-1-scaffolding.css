@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5715;
+  color: #333;
+  background-color: #fff; }
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+a {
+  color: #1662c6;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #0e4081;
+    text-decoration: underline; }
+  a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+
+figure {
+  margin: 0; }
+
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+.img-rounded {
+  border-radius: 6px; }
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.5715;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: auto;
+  max-width: 100%; }
+
+.img-circle {
+  border-radius: 50%; }
+
+hr {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 1px solid #f6f8f8; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
+[role="button"] {
+  cursor: pointer; }
+
+hr.color-docplanner-gray-darker {
+  border-top-color: #333; }
+
+hr.color-docplanner-gray-dark {
+  border-top-color: #747474; }
+
+hr.color-docplanner-gray {
+  border-top-color: #ababab; }
+
+hr.color-docplanner-gray-light {
+  border-top-color: #e0e4e4; }
+
+hr.color-docplanner-gray-lighter {
+  border-top-color: #eef2f2; }
+
+hr.color-docplanner-gray-lightest {
+  border-top-color: #f6f8f8; }
+
+hr.color-brand-primary {
+  border-top-color: #3d83df; }
+
+hr.color-brand-primary-light {
+  border-top-color: #eaf6fc; }
+
+hr.color-brand-success {
+  border-top-color: #00bfa5; }
+
+hr.color-brand-success-light {
+  border-top-color: #e9f6ef; }
+
+hr.color-brand-warning {
+  border-top-color: #ffc600; }
+
+hr.color-brand-warning-light {
+  border-top-color: #fefbdc; }
+
+hr.color-brand-danger {
+  border-top-color: #e74c3c; }
+
+hr.color-brand-danger-light {
+  border-top-color: #fdf2f1; }
+
+/*# sourceMappingURL=jade-dpuikit-rwd-on-1.css.map*/
